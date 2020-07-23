@@ -1,0 +1,10 @@
+{
+  "name": "@uphike/constants",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "typings": "dist/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

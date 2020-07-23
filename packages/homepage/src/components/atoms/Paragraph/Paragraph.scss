@@ -1,0 +1,9 @@
+.paragraph {
+  font-size: $text-md;
+  color: $color-text;
+  line-height: 200%;
+  
+  @include screen-below(sm) {
+    font-size: $text-sm;
+  }
+}

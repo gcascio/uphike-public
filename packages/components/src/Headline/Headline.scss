@@ -1,0 +1,72 @@
+.headline {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+
+  &--ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--grey {
+    color: $color-grey-dark;
+  }
+
+  &--green {
+    color: $color-green;
+  }
+}
+
+h1 {
+  font-size: $text-xl;
+  font-weight: 800;
+
+  @include screen-below(xs) {
+    font-size: $text-lg;
+  }
+}
+
+h2 {
+  font-size: $text-xl;
+  font-weight: 800;
+
+  @include screen-below(xs) {
+    font-size: $text-lg;
+  }
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: $text-lg;
+
+  @include screen-below(sm) {
+    font-size: $text-md;
+  }
+}
+
+h4 {
+  font-size: $text-md;
+}
+
+h5 {
+  font-size: $text-md;
+}
+
+h6 {
+  font-size: $text-md;
+}

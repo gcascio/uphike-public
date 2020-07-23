@@ -1,0 +1,19 @@
+.not-found {
+  margin-top: 10%;
+  text-align: center;
+
+  &__code {
+    color: $color-green;
+    font-size: 96px;
+  }
+
+  &__text {
+    font-size: 24px;
+
+    &--small {
+      font-size: $text-md;
+      margin-top: 5px;
+      margin-bottom: 45px;
+    }
+  }
+}

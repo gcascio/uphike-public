@@ -1,0 +1,31 @@
+/* global button reset */
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  color: inherit;
+  background: none;
+  line-height: normal;
+  outline: none;
+
+  /* Firefox fix - https://bugzilla.mozilla.org/show_bug.cgi?id=140562 */
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0 30px $color-white inset;
+}

@@ -1,0 +1,28 @@
+.content {
+  padding: 0 5vw;
+
+  &--padding {
+    @include screen-above(md) {
+      padding-top: 30px;
+    }
+
+    @include screen-below(md) {
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+    max-width: 1230px;
+
+    &--flex {
+      display: flex;
+    }
+  }
+
+  & & {
+    padding: 0;
+  }
+}

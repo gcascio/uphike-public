@@ -1,0 +1,40 @@
+.product-intro {
+  @include screen-below(sm) {
+    padding: 25px 0;
+  }
+
+  @include screen-above(sm) {
+    padding: 75px 0;
+  }
+
+  @include screen-above(md) {
+    display: flex;
+  }
+
+  > * {
+    flex: 1;
+  }
+
+  ul {
+    font-size: $text-md;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include screen-below(md) {
+      margin-top: 75px;
+    }
+
+    > *:last-child {
+      margin-top: 25px;
+    }
+  }
+}

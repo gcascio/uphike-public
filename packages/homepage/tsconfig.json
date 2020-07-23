@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@uphike/components*": [
+        "../components/src*"
+      ],
+      "@uphike/constants": [
+        "../constants/src"
+      ],
+      "*": [
+        "src/*",
+        "src/components/*"
+      ],
+    }
+  },
+}

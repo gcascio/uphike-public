@@ -1,0 +1,29 @@
+.header {
+  padding: 20px 0;
+  // position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  max-height: 80px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    > *:last-child {
+      margin-left: auto;
+
+      @include screen-below(md) {
+        display: none;
+      }
+    }
+  }
+
+  &__main-content {
+    flex: 4;
+  }
+
+  &__side-content {
+    flex: 1;
+  }
+}

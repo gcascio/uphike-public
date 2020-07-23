@@ -1,0 +1,59 @@
+.features {
+  $self: &;
+  @include screen-below(sm) {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 23vh;
+
+    @include screen-above(sm) {
+      &:nth-child(even) {
+        #{$self}__text {
+          order: 2;
+          margin-left: 40px;
+        }
+      }
+
+      &:nth-child(odd) {
+        #{$self}__text {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+
+  &__text {
+    @include screen-above(sm) {
+      flex: 1;
+      max-width: 520px;
+    }
+
+    p {
+      margin: 40px 0 30px;
+    }
+  }
+
+  &__topic {
+    color: $color-green;
+    text-transform: uppercase;
+    font-size: $text-xs;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__image-wrapper {
+    @include screen-below(sm) {
+      margin-top: 30px;
+    }
+    @include screen-above(sm) {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.capability-list {
+  li {
+    padding: 10px 0 10px 50px;
+    position: relative;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+  }
+
+  svg#{&}__highlighted {
+    stroke: $color-green;
+  }
+}

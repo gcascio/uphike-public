@@ -1,0 +1,124 @@
+.index-head {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include screen-below(sm) {
+    padding: 100px 0 50px;
+
+    &__scroll {
+      display: none;
+    }
+  }
+
+  @include screen-above(sm) {
+    height: calc(100vh - 80px);
+    justify-content: center;
+  }
+
+  &::after {
+    content: '';
+    background: linear-gradient(0, $color-white, rgba($color-white, 0.9));
+    z-index: -1;
+
+    @include screen-below(sm) {
+      background: linear-gradient(0, $color-white, rgba($color-white, 0.95));
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+  }
+
+  &__content {
+    flex: 1;
+    max-width: 615px;
+
+    @include screen-below(md) {
+      text-align: center;
+    }
+
+    p {
+      margin: 35px 0 60px;
+
+      @include screen-below(sm) {
+        margin: 15px 0 40px;
+      }
+    }
+  }
+
+  &__image {
+    flex: 1;
+    max-width: 615px;
+    margin-left: 60px;
+
+    @include screen-below(md) {
+      display: none;
+    }
+  }
+
+  &__highlight {
+    color: $color-green
+  }
+
+  &__newsletter {
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 440px;
+    margin: 40px 0 0;
+
+    @include screen-below(md) {
+      margin: 40px auto 0;
+    }
+
+    @include screen-below(xs) {
+      flex-direction: column;
+    }
+
+    @include screen-above(xs) {
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+
+      button {
+        border-radius: 0 5px 5px 0;
+      }
+    }
+
+    input {
+      flex: 1;
+      line-height: 54px;
+      border: 0;
+      border-radius: $border-radius;
+      padding: 0 0 0 25px;
+
+      @include screen-below(xs) {
+        line-height: 50px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &-hint {
+      text-align: center;
+      color: $color-grey-dark;
+      font-size: $text-ti;
+      max-width: 440px;
+      margin: 30px auto 0;
+    }
+
+    &-message {
+      color: $color-green;
+    }
+  }
+
+  @include screen-above(sm) {
+
+  }
+
+  @include screen-below(sm) {
+
+  }
+}

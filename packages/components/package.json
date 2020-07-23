@@ -1,0 +1,23 @@
+{
+  "name": "@uphike/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "typings": "dist/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bem-join": "2.0.2",
+    "history": "5.0.0",
+    "react": "16.13.1",
+    "react-icons": "3.10.0",
+    "react-router-dom": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/history": "4.7.6",
+    "@types/react": "16.9.43",
+    "@types/react-router": "5.1.8",
+    "@types/react-router-dom": "5.1.5"
+  }
+}
